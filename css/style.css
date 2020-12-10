@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+  }
+body{
+    background-image: url("../images/geometry2.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size:auto;
+    height: 100vh;
+}
+.modal.modal-active{
+    background-color: rgba(0, 0, 0, 0.96);;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+main{
+    display: none;
+}
+.modal.modal-active main{
+    display: initial;
+    background-color: white;
+    width: 70vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+main h1{
+    text-align: center;
+    margin-top: 1rem;
+    color: #383838;
+    width: 70%;
+    margin: 1rem auto;
+    font-size: 2.5rem;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+}
+.form label{
+    width: 100%;
+    color: #4d4b4b;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+.form #player1, .form #player2{
+    width: 80%;
+    border: none;
+    height: 1.6rem;
+    border-bottom: 1px solid #a19d9d;
+    color: #646262;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 0.6rem;
+    border-radius: 0.1rem;
+}
+.color-player1, .color-player2{
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    border: solid 2px #cac6c6;
+}
+.color-player1{
+    background-color:#02b3e4;
+}
+
+.color-player2{
+    background-color: rgb(247, 71, 71);
+}
+
+main button{
+    display: block;
+    width: 40%;
+    height: 2.7rem;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    color: white;
+    background-color: rgb(66, 224, 66);
+    border: 1px solid rgb(78, 177, 78);
+    font-family: 'Acme', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#container-master{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+#container-master div{
+    width: 80%;
+}
+aside{
+    margin: 0 0 0 3rem;
+    color: #2e3d49;
+}
+aside input{
+    border: none;
+    background: none;
+    color: rgb(61, 60, 60);
+    text-align: center;   
+    font-weight: 200;
+    width: 100%;
+}
+aside h3, aside h4{
+    color: white;
+    background-color: #04cbba;
+    border-radius: 1rem 0 1rem 0;
+    padding-left: 1rem;
+}
+#scorePlayer1{
+    width: 7rem;
+    color: #02b3e4;
+    font-size: 1.7rem;
+}
+#scorePlayer2{
+    width: 7rem;
+    font-size: 1.7rem;
+    color: rgb(247, 71, 71);
+}
+#now{
+    color:#2e3d49;
+    font-weight: 700;
+}
+article{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 2rem 1.4rem;
+    border-radius: 0.8rem;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+}
+.title-game{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    color: rgb(46, 43, 43);
+    width: 100%;
+}
+section{
+    background-image: url('../images/card-removebg-preview.png');
+    background-position: center;
+    border-radius: 1rem;
+    width: 20%;
+    height: 30vh;
+    margin: 0.8rem 0.4rem;
+    display: flex;
+    align-items: center;
+    background-color: #2e3d49;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+img{
+    display: none;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 13rem;
+}
+.active{
+    border: 2px solid turquoise;
+    background-image: none;
+}
+
+.correct.player1{
+    border:2px solid #087a99;
+    background-color: #02b3e4;
+    background-image: none;
+}
+.correct.player2{
+    border: 2px solid red;
+    background-color: rgb(247, 71, 71);
+    background-image: none;
+}
+
+.active > img, .correct.player1 > img, .correct.player2 > img{
+    display: initial;
+}
+

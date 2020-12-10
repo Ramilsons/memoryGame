@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <div class="modal modal-active">
+        <main>
+            <h1>Bem-Vindo(a)</h1>
+                <div class="form">
+                    <label for="player1">Nome do jogador 1</label>
+                    <input id="player1" required placeholder="João">
+                    <div class="color-player1"></div>
+                </div>
+                <div class="form">
+                    <label for="player2">Nome do jogador 2</label>
+                    <input id="player2" required placeholder="Maria">
+                    <div class="color-player2"></div>
+                </div>
+                <button id="start">COMEÇAR</button>
+        </main>
+    </div>
+    
+    <div id="container-master">
+        <aside>
+            <h3>Placar</h3>
+            <input id="scorePlayer1" disabled>
+            X
+            <input id="scorePlayer2" disabled>
+    
+            <h4>Jogador da vez</h4>
+            <input id="now" disabled>
+        </aside>
+        <!--<h1 class="title-game">JOGO DA MEMÓRIA</h1>-->
+        <article>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+                <section onclick="selected(event)">
+                    <img>
+                </section>
+        </article>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
