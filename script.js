@@ -35,7 +35,7 @@ function randOrd() {
 let values_random = values.sort(randOrd);
 
 boxes.forEach((element, index)=>{
-    boxes[index].src = values_random[index]
+    boxes[index].src = `${document.location.href+'images/'}${values_random[index]}`
 })
 
 

@@ -175,8 +175,8 @@ img{
     display: none;
     margin: 0 auto;
     border-radius: 0.8rem;
-    width: 4rem;
-    height: 13rem;
+    max-width: 60%;
+    object-fit: cover;
 }
 .active{
     border: 2px solid turquoise;
