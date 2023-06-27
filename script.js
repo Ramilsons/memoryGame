@@ -1,13 +1,13 @@
 let num_click = 0
 values = [
-        'https://www.flaticon.com/svg/static/icons/svg/667/667189.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/667/667189.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/2950/2950570.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/2950/2950570.svg', 
-        'https://www.flaticon.com/svg/static/icons/svg/802/802287.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/802/802287.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/2965/2965100.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/2965/2965100.svg'
+        'elephant.png',
+        'elephant.png',
+        'wild-pig.png',
+        'wild-pig.png', 
+        'dog.png',
+        'dog.png',
+        'giraffe.png',
+        'giraffe.png'
 ]
 
 let boxes = document.querySelectorAll('img')
